@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Polar Bears, and how we can save them. - Adam</title>
+<style>
+  :root {
+    --red: #d32f2f;
+    --blue: #1565c0;
+    --yellowish: #fff9db;
+    --text-dark: #222;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--yellowish);
+    color: var(--text-dark);
+  }
+  header {
+    background: var(--blue);
+    color: var(--yellowish);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  header p {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+  nav {
+    background: var(--red);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  nav a {
+    color: var(--yellowish);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  section h2 {
+    color: var(--blue);
+    border-bottom: 3px solid var(--red);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  /* About Me */
+  #about p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  /* Portfolio grid */
+  #portfolio .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+  }
+  #portfolio .project {
+    background: white;
+    border: 2px solid var(--red);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  #portfolio .project h3 {
+    margin-top: 0;
+    color: var(--red);
+  }
+  #portfolio .project p {
+    font-size: 0.95rem;
+  }
+  /* Contact form */
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+  }
+  #contact label {
+    font-weight: 600;
+  }
+  #contact input, 
+  #contact textarea {
+    padding: 0.6rem;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  #contact button {
+    width: fit-content;
+    background: var(--red);
+    color: var(--yellowish);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #contact button:hover {
+    background: #b52727;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--blue);
+    color: var(--yellowish);
+    font-size: 0.9rem;
+  }
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    nav {
+      gap: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Adam</h1>
+  <p>Polar Bears, and how we can save them.</p>
+</header>
+
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Adam — passionate about raising awareness on polar bears and the environmental challenges they face. I believe through education and action, we can all contribute to preserving these magnificent creatures and their habitats.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Polar Bears Conservation Blog</h3>
+        <p>A blog series focused on the latest research, news, and ways to help polar bears survive climate change.</p>
+      </div>
+      <div class="project">
+        <h3>Wildlife Photography</h3>
+        <p>A collection of photos capturing polar bears in their natural environment to promote empathy and awareness.</p>
+      </div>
+      <div class="project">
+        <h3>Community Awareness Campaign</h3>
+        <p>Organized local events and campaigns to educate communities about polar bears and environmental responsibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="alert('Thanks for reaching out, I will get back to you soon!'); return false;">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required />
+      
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required />
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Adam - Polar Bears Awareness
+</footer>
+
+</body>
+</html>
